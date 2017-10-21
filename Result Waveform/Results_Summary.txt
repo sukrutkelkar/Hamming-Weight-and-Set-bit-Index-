@@ -1,0 +1,6 @@
+######################################### Test Result ###########################################
+
+1) Test_1.jpg is the output of the design for test vector 1
+2) Test_2.jpg is the ouput of the design for test vector 2
+3) Ref_test.jpg is the output of the ref model which also has the output of 1st and 2nd test vectors
+4) Ref_test_3 and Test_3 are for checking if the 0th bit is set. In this the data out valid goes high at exact cycle.

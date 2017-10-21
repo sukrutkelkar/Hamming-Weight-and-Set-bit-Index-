@@ -1,0 +1,28 @@
+//#################################################################################
+// Project       :  Hamming weight counter and index indentifier
+// Editor        :  Notepad++ on Windows 8
+// File          :  tb_setup.txt
+// Description   :  Setting up the test bench
+// TB Created by :  Sukrut Kelkar
+// Date          :  10/20/2017                 
+//#################################################################################
+How to Run the Test Bench:
+
+Structure Setup: (You can Ignore this step if extracting from project_sK.zip or using the git, the below structure is already present in the zip file with ModelSim project in it)
+1) Create a folder with any name. Setup 3 folders in that folder[sim,src,tb]
+2) src contains the design soruce code
+3) tb contains the test bench files
+4) sim -- Project Directory
+
+Setting up the ModelSim project:
+1) Create a new project
+2) Give the working directory as sim
+3) Add Existing files -- all files from tb and src folder
+4) Once this is done, copy the bit_tb.do file into the sim folder.(This file might already be present in the structure in the project_sK.zip)
+5) On the command line in ModelSim, run the following command: do bit_tb.do
+6) Text files will be generated in the sim folder by the name ref_results.txt and test_vectors.txt.
+
+Python code setup:
+TEST Generation
+1) copy the address of the folder sim and paste it in the Python file to set the output address for the test file to be generated. for eg: file=open('E:\velodyne\sim\test_vectors.txt','w');
+2) It is important that the test file generated should be in the folder same as that of the ModelSim project folder. TB is going to read tests from this file eventually.
